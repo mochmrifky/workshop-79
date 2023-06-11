@@ -22,9 +22,8 @@ import lombok.NoArgsConstructor;
 public class Order {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private String id;
+	private String orderId;
 	private String name;
-	private String description;
-	private String skuCode;
-	private BigDecimal price;
+	private int qty;
+	private Double price;
 }
